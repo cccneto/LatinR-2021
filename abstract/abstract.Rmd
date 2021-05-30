@@ -1,21 +1,27 @@
 ---
-type: poster   # List of types is available using latinr_types()
-language: spanish
+type: oral   # List of types is available using latinr_types()
+language: english
 title: "Título"
-topics: [1, 2] # List of topics is available using latinr::latinr_topics()
+topics: [3, 13] # List of topics is available using latinr::latinr_topics()
 authors:
-  - first_name: Primer
-    last_name: Autor
-    email: primero@somemail.com   # One author's email has to match the email registered in EasyChair.
-    country: ar  # List of countries available using latinr::latinr_countries()
-    affiliation: "Princeton University"
-    url: "google.com"  # Optional 
+  - first_name: Claudiano
+    last_name: Cruz Neto
+    email: cneto@ufrb.edu.br   # One author's email has to match the email registered in EasyChair.
+    country: br  # List of countries available using latinr::latinr_countries()
+    affiliation: "Universidade Federal do Recôncavo da Bahia"
+    # url: "google.com"  # Optional 
     corresponding: true
-  - first_name: Segundo 
-    last_name: Autor
-    email: segundo@somemail.com
-    country: ar
-    affiliation: ["Princeton University", "Springer Heidelberg"]
+  - first_name: Beatriz
+    last_name: Milz
+    email: milz.bea@gmail.com
+    country: br
+    affiliation: "Instituto de Energia e Ambiente - Universidade de São Paulo"
+    corresponding: false
+  - first_name: Samuel
+    last_name: Macedo
+    email: samuelmacedo@recife.ifpe.edu.br
+    country: br
+    affiliation: "Instituto Federal de Pernambuco"
     corresponding: false
 presenter: 1  # Only one author can be set as presenter
 keywords: 
@@ -27,7 +33,7 @@ biblio-style: apalike-es
 output: 
     latinr::latinr_article:
       keep_tex: false
-      submission: true
+      submission: false
 params: 
   check_is_error: FALSE
 ---
